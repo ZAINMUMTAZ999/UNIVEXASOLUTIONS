@@ -95,7 +95,7 @@ const TechStack = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-white to-gray-50/50 py-0 lg:py-0 overflow-hidden" ref={ref}>
+    <section className="relative bg-gradient-to-b from-white to-gray-50/50 py-0 lg:py-0 overflow-hidden -mt-28" ref={ref}>
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-20 w-64 h-64 bg-purple-100/40 rounded-full blur-3xl" />
@@ -105,14 +105,14 @@ const TechStack = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         
         {/* Header Section */}
-        <div className="flex flex-col items-center text-center space-y-8 mb-16 lg:mb-20">
+        <div className="flex flex-col items-center text-center space-y-8 mb-16  lg:mb-20">
           <motion.div
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-4xl"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6 ">
               <span className="bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
                 We've got the tools, the team, and the energy to make it happen.
               </span>
@@ -120,7 +120,7 @@ const TechStack = () => {
           </motion.div>
 
           <motion.p
-            className="text-lg sm:text-lg lg:text-lg xl:text-lg text-gray-600 leading-relaxed font-light max-w-3xl"
+            className="text-lg sm:text-lg lg:text-xl xl:text-xl  text-gray-600 leading-relaxed font-serif max-w-3xl"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}

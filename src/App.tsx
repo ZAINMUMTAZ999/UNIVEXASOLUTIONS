@@ -70,8 +70,8 @@ const ProtectedRoute = ({
 
 
 const App = () => {
-  const { isLogged, isAdmin } = useAuth();
-  console.log("you are a admin", isAdmin);
+  const { isLogged } = useAuth();
+
   
   return (
     
