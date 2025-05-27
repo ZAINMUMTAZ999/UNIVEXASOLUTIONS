@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
   <div 
   className="text-xl"
   // className="text-base sm:text-lg md:text-xl lg:text-2xl scale-100 md:scale-125"
-    style={{ zoom: '125%' }}
+    // style={{ zoom: '100%' }}
   >
     <StrictMode>
       {/* <Provider store={Store}> */}
