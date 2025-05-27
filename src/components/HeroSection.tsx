@@ -279,8 +279,8 @@ const HeroSkeleton: React.FC = () => (
           </div>
         </div>
 
-        {/* Right Image Skeleton - 60% on large screens, hidden on mobile */}
-        <div className="hidden lg:flex lg:col-span-3 flex-col items-center justify-center space-y-6 animate-pulse h-full">
+        {/* Right Image Skeleton - 60% on medium+ screens, hidden on mobile */}
+        <div className="hidden md:flex md:col-span-3 lg:col-span-3 flex-col items-center justify-center space-y-6 animate-pulse h-full">
           {/* Main Image Skeleton */}
           <div className="aspect-[4/3] bg-gray-200 rounded-2xl shadow-2xl w-full max-w-2xl"></div>
           
@@ -335,17 +335,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
 
       {/* Main Content Container */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl h-screen">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 h-full items-center py-4 sm:py-6 md:py-8 lg:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12 h-full items-center py-2 sm:py-4 md:py-8 lg:py-12">
           
-          {/* Left Content - Text Section (40% width on large screens) */}
-          <div className="lg:col-span-2 flex flex-col justify-center space-y-8 h-full">
+          {/* Left Content - Text Section (40% width on medium+ screens) */}
+          <div className="md:col-span-2 lg:col-span-2 flex flex-col justify-center space-y-6 md:space-y-8 h-full">
             <motion.div
               initial={{ y: -30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="space-y-6"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight">
                 Empower Your{" "}
                 <span className="bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
                   Startup
@@ -355,7 +355,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
             </motion.div>
 
             <motion.p
-              className="text-lg sm:text-xl lg:text-xl xl:text-2xl text-gray-600 leading-relaxed font-light"
+              className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed font-light"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
@@ -365,14 +365,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 pt-6"
+              className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4 md:pt-6"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <Link to="/contactUs" className="flex-shrink-0">
                 <motion.button
-                  className="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden text-base lg:text-lg min-w-[140px] lg:min-w-[160px] flex items-center justify-center"
+                  className="group relative w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden text-sm md:text-base lg:text-lg min-w-[120px] md:min-w-[140px] lg:min-w-[160px] flex items-center justify-center"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                 >
