@@ -281,6 +281,7 @@
 
 // export default HeroSection;
 /* eslint-disable react-hooks/rules-of-hooks */
+
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -323,8 +324,8 @@ const HeroSkeleton: React.FC = () => (
         </div>
 
         {/* Right Image Skeleton */}
-        <div className="flex-1 flex flex-col items-center justify-center space-y-8 animate-pulse max-w-2xl w-full">
-          <div className="aspect-[5/4] bg-gray-200 rounded-3xl shadow-2xl w-full max-w-xl"></div>
+        <div className="flex-1 flex flex-col items-center justify-center space-y-8 animate-pulse w-full">
+          <div className="aspect-[4/3] bg-gray-200 rounded-3xl shadow-2xl w-full min-h-[500px] lg:min-h-[600px]"></div>
           
           <div className="flex justify-center items-center gap-8 w-full">
             <div className="flex gap-3">
@@ -396,18 +397,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl">
-        <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen py-16 lg:py-20 gap-16 lg:gap-20">
+      <div className="relative z-10 container mx-auto px-6 sm:px-8 lg:px-12 max-w-[1600px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen py-16 lg:py-20 gap-12 lg:gap-16">
           
           {/* Left Content - Text Section */}
-          <div className="flex-1 flex flex-col justify-center space-y-10 max-w-2xl lg:pr-8">
+          <div className="flex-1 flex flex-col justify-center space-y-10 max-w-2xl lg:pr-4">
             <motion.div
               initial={{ y: -30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="space-y-8"
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 leading-[1.05] tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-[1.05] tracking-tight">
                 Empower Your{" "}
                 <span className="bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
                   Startup
@@ -417,7 +418,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
             </motion.div>
 
             <motion.p
-              className="text-xl sm:text-2xl lg:text-3xl text-gray-600 leading-relaxed font-light max-w-2xl"
+              className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-light max-w-xl"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
