@@ -162,7 +162,7 @@ const LogoutApi = async () => {
 
 const addBlogApi = async (formData: FormData) => {
   try {
-    const response = await fetch("http://localhost:8000/v2/addBlog", {
+    const response = await fetch(`${Base_Url_API}/v2/addBlog`, {
       method: "POST",
       credentials: "include",
       body: formData,
@@ -181,7 +181,7 @@ const addBlogApi = async (formData: FormData) => {
 };
 const contactUsApi = async (formData: contactUsTypes) => {
   try {
-    const response = await fetch("http://localhost:8000/v2/contactUs", {
+    const response = await fetch(`${Base_Url_API}/v2/contactUs`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -200,7 +200,7 @@ const contactUsApi = async (formData: contactUsTypes) => {
 };
 const getContactUsApi = async (): Promise<contactUsResponse[]> => {
   try {
-    const response = await fetch("http://localhost:8000/v2/contactUs", {
+    const response = await fetch(`${Base_Url_API}/v2/contactUs`, {
       credentials: "include",
     });
     if (!response.ok) {
@@ -214,7 +214,7 @@ const getContactUsApi = async (): Promise<contactUsResponse[]> => {
 };
 const allBlogsApi = async (): Promise<addBlogTypes[]> => {
   try {
-    const response = await fetch("http://localhost:8000/v2/blogs", {
+    const response = await fetch(`${Base_Url_API}/v2/blogs`, {
       credentials: "include",
     });
     if (!response.ok) {
@@ -239,7 +239,7 @@ const searchPage = async (
   queryParams.append("page", searchParams.page || "");
   try {
     const repsonse = await fetch(
-      `http://localhost:8000/v2/search?${queryParams}`,
+      `${Base_Url_API}/v2/search?${queryParams}`,
       {
         method: "GET",
         credentials: "include",
@@ -269,7 +269,7 @@ export const searchPageContact = async (
   queryParams.append("page", searchParams.page || "");
   try {
     const repsonse = await fetch(
-      `http://localhost:8000/v2/contactUs?${queryParams}`,
+      `${Base_Url_API}/v2/contactUs?${queryParams}`,
       {
         method: "GET",
         credentials: "include",
@@ -294,7 +294,7 @@ const AddReviewApi = async (formdata: {
   message: string
 }): Promise<addReviewTypes> => {
   try {
-    const response = await fetch("http://localhost:8000/v2/addReview", {
+    const response = await fetch(`${Base_Url_API}/v2/addReview`, {
       method: "POST",
       credentials: "include",
       headers: {
@@ -316,7 +316,7 @@ const AddReviewApi = async (formdata: {
 };
 const GetReviewsApi = async (): Promise<addReviewTypes[]> => {
   try {
-    const response = await fetch("http://localhost:8000/v2/addReview", {
+    const response = await fetch(`${Base_Url_API}/v2/addReview`, {
       // method: "POST",
       credentials: "include",
     });
@@ -334,7 +334,7 @@ const GetReviewsApi = async (): Promise<addReviewTypes[]> => {
 };
 const GetAllReviewsApi = async (): Promise<addReviewTypes[]> => {
   try {
-    const response = await fetch("http://localhost:8000/v2/allReview", {
+    const response = await fetch(`${Base_Url_API}/v2/allReview`, {
       credentials: "include",
     });
 
@@ -355,7 +355,7 @@ export type userTypes = {
 };
 const getUserInfoApi = async (): Promise<userTypes[]> => {
   try {
-    const response = await fetch("http://localhost:8000/v2/login", {
+    const response = await fetch(`${Base_Url_API}/v2/login`, {
       credentials: "include",
     });
 
@@ -372,7 +372,7 @@ const getUserInfoApi = async (): Promise<userTypes[]> => {
 };
 const getRegisteredUser = async (): Promise<registerUserTypes[]> => {
   try {
-  const response = await fetch("http://localhost:8000/v1/allRegisteredUser", {
+  const response = await fetch(`${Base_Url_API}/v1/allRegisteredUser`, {
       credentials: "include",
     });
 
@@ -389,7 +389,7 @@ const getRegisteredUser = async (): Promise<registerUserTypes[]> => {
 };
 const allRegisteredUserApi = async (): Promise<registerUserTypes[]> => {
   try {
-    const response = await fetch("http://localhost:8000/v1/allRegisteredUser", {
+    const response = await fetch(`${Base_Url_API}/v1/allRegisteredUser`, {
       credentials: "include",
     });
 
