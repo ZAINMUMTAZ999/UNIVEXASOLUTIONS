@@ -76,8 +76,8 @@ export type addReviewTypes = {
 //   ? '/.netlify/functions/api'
 //   : '/api';
 
-// const Base_Url_API = "http://localhost:8000";
-const Base_Url_API = "https://683585dbfddf7136ed32b64e--univexasolutions.netlify.app/.netlify/functions/api";
+// const Base_Url_API = "https://683585dbfddf7136ed32b64e--univexasolutions.netlify.app/.netlify/functions/api";
+const Base_Url_API = "https://683589e1ac96d3401ee69937--lively-torte-069cb7.netlify.app";
 // const Base_Url_API = import.meta.env.PROD
 //   ? '/api'
 //   : import.meta.env.FRONTEND_URL;
