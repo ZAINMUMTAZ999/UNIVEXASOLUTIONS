@@ -72,7 +72,7 @@ const Header = () => {
                 </Link>
                 <Link
                   to="/addBlog"
-                  className="text-gray-700 bg-green-100 hover:bg-green-200 px-4 py-2 rounded-md font-medium transition-colors"
+                  className="text-gray-700 bg-green-100 hover:bg-green-200 px-4 py-2 rousnded-md font-medium transition-colors"
                 >
                   Add Blog
                 </Link>
@@ -134,26 +134,32 @@ const Header = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200 shadow-lg">
             <Link
               to="/services"
-              className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
+              className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               onClick={closeMobileMenu}
             >
               Services
             </Link>
             <Link
               to="/contactUs"
-              className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
+              className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               onClick={closeMobileMenu}
             >
               Contact Us
             </Link>
             <Link
               to="/allBlogs"
-              className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
+             className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               onClick={closeMobileMenu}
             >
               Blogs
             </Link>
-            
+            <Link
+              to="/GetallReviews"
+              className="text-white bg-blue-600 hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+              onClick={closeMobileMenu}
+            >
+              Reviews
+            </Link>
             
             {isAdmin && (
               <>
