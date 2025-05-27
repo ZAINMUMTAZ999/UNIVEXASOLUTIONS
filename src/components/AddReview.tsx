@@ -99,9 +99,7 @@ const navigate=useNavigate();
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Share Your Experience
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Help others by sharing your honest feedback. Your review makes a difference.
-            </p>
+  
           </div>
 
           {/* Main Form */}
