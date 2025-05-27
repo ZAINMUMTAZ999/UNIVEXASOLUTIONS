@@ -153,13 +153,7 @@ const Header = () => {
             >
               Blogs
             </Link>
-            <Link
-              to="/GetallReviews"
-              className="text-white bg-blue-600 hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-              onClick={closeMobileMenu}
-            >
-              Reviews
-            </Link>
+           
             
             {isAdmin && (
               <>
