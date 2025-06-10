@@ -71,23 +71,11 @@ export type addReviewTypes = {
   // interestedIn: string;
   message: string;
 };
-// const Base_Url_API = import.meta.env.VITE_API_BSE_URL || "";
-// const Base_Url_API = import.meta.env.PROD
-//   ? '/.netlify/functions/api'
-//   : '/api';
 
-// const Base_Url_API = "https://683585dbfddf7136ed32b64e--univexasolutions.netlify.app/.netlify/functions/api";
-// const Base_Url_API = "https://683589e1ac96d3401ee69937--lively-torte-069cb7.netlify.app";
-const Base_Url_API = "https://cosmic-salamander-bb3120.netlify.app/api";
-// const Base_Url_API = import.meta.env.PROD
-//   ? '/api'
-//   : import.meta.env.FRONTEND_URL;
 
-//   type loginUserTypes = {
-//     email: string;
-//     password: string;
-//   };
-// console.log(Base_Url_API)
+// const Base_Url_API = "https://cosmic-salamander-bb3120.netlify.app/api";
+const Base_Url_API = "http://localhost:8000/api";
+
 const registerApi = async (formDatajson: registerUserTypes) => {
   const response = await fetch(`${Base_Url_API}/v1/register`, {
     method: "POST",

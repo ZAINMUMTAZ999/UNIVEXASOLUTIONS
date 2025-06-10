@@ -17,7 +17,7 @@ export const AddReview = () => {
     handleSubmit,
     register,
     formState: { errors },
-    reset,
+    // reset,
     watch,
   } = useForm<addReviewTypes>();
 
@@ -58,7 +58,7 @@ const navigate=useNavigate();
     onSuccess: () => {
       showToast({ type: "SUCCESS", message: "Review Added!" });
       // toast();
-      reset(); // clear form
+      // reset(); // clear form
       navigate("/");
     },
     onError: (error: Error) => {
