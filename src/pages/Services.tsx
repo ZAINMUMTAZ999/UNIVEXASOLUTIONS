@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Monitor, Code, Palette, Zap, Users, Award, CheckCircle, Star, Globe, Search, Shield, Smartphone, Database, Cloud, Wrench, TrendingUp, BarChart3 } from 'lucide-react';
+import  { useState, useEffect } from 'react';
+import {  Code, Palette, Zap,  Award, CheckCircle,  Globe, Search, Shield, Smartphone, Database,  Wrench, TrendingUp, BarChart3 } from 'lucide-react';
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -80,28 +80,7 @@ const Services = () => {
     }
   ];
 
-  const processSteps = [
-    {
-      step: "01",
-      title: "Discovery & Planning",
-      description: "We analyze your requirements and create a detailed project roadmap."
-    },
-    {
-      step: "02",
-      title: "Design & Prototyping",
-      description: "Creating wireframes and prototypes to visualize the final product."
-    },
-    {
-      step: "03",
-      title: "Development & Testing",
-      description: "Building your solution with rigorous testing throughout the process."
-    },
-    {
-      step: "04",
-      title: "Launch & Support",
-      description: "Deploying your project and providing ongoing maintenance and support."
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
