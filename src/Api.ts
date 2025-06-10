@@ -73,8 +73,8 @@ export type addReviewTypes = {
 };
 
 
-// const Base_Url_API = "https://cosmic-salamander-bb3120.netlify.app/api";
-const Base_Url_API = "http://localhost:8000/api";
+const Base_Url_API = "https://cosmic-salamander-bb3120.netlify.app/api";
+// const Base_Url_API = "http://localhost:8000/api";
 
 const registerApi = async (formDatajson: registerUserTypes) => {
   const response = await fetch(`${Base_Url_API}/v1/register`, {
