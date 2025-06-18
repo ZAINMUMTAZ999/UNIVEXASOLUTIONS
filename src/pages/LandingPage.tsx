@@ -21,7 +21,7 @@ const imageList = [img1, img2, img3, img4, img5];
 
 const LandingPage = () => {
   return (
-   <section className="mt-7 overflow-x-hidden">
+   <section className="mt-7 overflow-x-hidden bg-white">
 
       <HeroSection images={imageList} />
       
