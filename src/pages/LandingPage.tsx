@@ -21,7 +21,7 @@ const imageList = [img1, img2, img3, img4, img5];
 
 const LandingPage = () => {
   return (
-    <div className="mt-28">
+    <div className="">
       <span className="">
 
       <HeroSection images={imageList}  />

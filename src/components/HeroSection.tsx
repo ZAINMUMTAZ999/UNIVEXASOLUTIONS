@@ -91,7 +91,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
 
   return (
   // <section className="relative bg-white min-h-screen overflow-hidden -mt-24 sm:-mt-28 md:-mt-32 lg:-mt-32">
-  <section className="relative bg-white  sm:-mt-28 md:-mt-32 lg:-mt-32">
+  // <section className="relative bg-white  sm:-mt-28 md:-mt-32 lg:-mt-32">
+  <section className="relative bg-white sm:mt-7 md:-mt-8 lg:-mt-8">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl" />
