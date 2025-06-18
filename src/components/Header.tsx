@@ -48,7 +48,7 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <Link
               to="/services"
-              className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
+              className="text-gray-700  hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
             >
               Services
             </Link>
