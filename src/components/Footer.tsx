@@ -24,21 +24,22 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-sm text-purple-100">
-            <li><Link to="/services/web" className="hover:text-white ">Web Development</Link></li>
-            <li><Link to="/services/mobile" className="hover:text-white">Mobile Apps</Link></li>
-            <li><Link to="/services/ai" className="hover:text-white">AI Solutions</Link></li>
-            <li><Link to="/services/cloud" className="hover:text-white">Cloud Deployment</Link></li>
+            <li><Link to="/services" className="hover:text-white ">Web Development</Link></li>
+            <li><Link to="/services" className="hover:text-white">Mobile Apps</Link></li>
+            <li><Link to="/services" className="hover:text-white">AI Solutions</Link></li>
+            <li><Link to="/services" className="hover:text-white">Cloud Deployment</Link></li>
+            <li><Link to="/services" className="hover:text-white">Digital Marketing</Link></li>
           </ul>
         </div>
 
         {/* Company */}
         <div>
-          <h3 className="text-lg font-semibold mb-4  ">Company</h3>
+          <h3 className="text-lg font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm text-purple-100">
             <li><Link to="/about" className="hover:text-white">About Us</Link></li>
-            <li><Link to="/blogs" className="hover:text-white">Blogs</Link></li>
-            <li><Link to="/careers" className="hover:text-white">Careers</Link></li>
-            <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
+            <li><Link to="/allBlogs" className="hover:text-white">Blogs</Link></li>
+            {/* <li><Link to="/careers" className="hover:text-white">Careers</Link></li> */}
+            <li><Link to="/contactUs" className="hover:text-white">Contact</Link></li>
           </ul>
         </div>
 
@@ -51,14 +52,14 @@ const Footer = () => {
             <a href="#" className="hover:text-white"><Instagram size={20} /></a>
             <a href="#" className="hover:text-white"><Linkedin size={20} /></a>
           </div>
-          <p className="text-sm  text-black">Email: hello@univexa.com</p>
-          <p className="text-sm  text-black">Phone: +92-XXX-XXXXXXX</p>
+          <p className="text-sm  text-black">Email: hello@sekaisapce.com</p>
+          <p className="text-sm  text-black">Phone: +92-324-6288217</p>
         </div>
       </div>
 
       {/* Bottom Line */}
       <div className="mt-12  border-purple-700 pt-6 text-center text-sm text-black">
-        &copy; {new Date().getFullYear()} UNIVEXA Solutions. All rights reserved.
+        &copy; {new Date().getFullYear()} SekaiSpace.com. All rights reserved.
       </div>
     </footer>
   );
