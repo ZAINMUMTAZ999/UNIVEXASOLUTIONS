@@ -14,8 +14,8 @@ const HomeLayout = ({ children }: Props) => {
       <Header />
       
       {/* Main content area with proper spacing and responsive padding */}
-      <main className="flex-grow w-full -mt-10">
-        <div className="min-h-[calc(100vh-theme(spacing.16))] sm:min-h-[calc(100vh-theme(spacing.20))]"> 
+      <main className="">
+        <div > 
           {children}
         </div>
  </main>
