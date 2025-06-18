@@ -21,14 +21,14 @@ const imageList = [img1, img2, img3, img4, img5];
 
 const LandingPage = () => {
   return (
-   <section className="mt-7 overflow-x-hidden bg-white">
+  <section className="mt-7 overflow-x-hidden bg-white">
 
       <HeroSection images={imageList} />
       
       {/* Fixed WhatsApp Button - Positioned as floating button */}
       <div className="fixed bottom-6 right-6 z-50">
         <WhatsAppLinkButton 
-          phoneNumber="92345928090" 
+          phoneNumber="923246288217" 
           message="Hi, I'm interested in your services!" 
         />
       </div>
