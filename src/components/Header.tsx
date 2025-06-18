@@ -3,7 +3,7 @@ import  { useState } from "react";
 import { AppContext } from "../context/AppNotify";
 import DropDownUser from "./DropDownUser";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/sekaispace_icon_only.svg";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
@@ -17,6 +17,7 @@ const Header = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+
 
   return (
     <header className="bg-white shadow-md sticky  top-0 z-50">
@@ -35,7 +36,7 @@ const Header = () => {
                 className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 object-contain"
               />
               <span className="text-lg sm:text-xl font-bold text-blue-600">
-                UNIVEXA
+                SekaiSpace
               </span>
             </Link>
           </div>
