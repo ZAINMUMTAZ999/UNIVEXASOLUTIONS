@@ -27,11 +27,11 @@ const LandingPage = () => {
       {/* Fixed WhatsApp Button - Positioned as floating button */}
       <div className="fixed bottom-6 right-6 z-50">
         <WhatsAppLinkButton 
-          phoneNumber="923459280907" 
+          phoneNumber="92345928090" 
           message="Hi, I'm interested in your services!" 
         />
       </div>
-      <span className=" mt-28">
+      <span className="mt-28">
 
       <TechStack/>
       </span>
