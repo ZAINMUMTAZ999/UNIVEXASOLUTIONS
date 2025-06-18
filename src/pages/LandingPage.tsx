@@ -21,11 +21,11 @@ const imageList = [img1, img2, img3, img4, img5];
 
 const LandingPage = () => {
   return (
-    <div className="">
-      <span className="">
+    <div className="mt-7">
+      
 
       <HeroSection images={imageList}  />
-      </span>
+      
       
       {/* Fixed WhatsApp Button - Positioned as floating button */}
       <div className="fixed bottom-6 right-6 z-50">
