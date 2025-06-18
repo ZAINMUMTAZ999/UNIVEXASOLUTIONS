@@ -47,8 +47,8 @@ const HeroSkeleton: React.FC = () => (
         {/* Right Image Skeleton - 60% on medium+ screens, hidden on mobile */}
         <div className="hidden md:flex md:col-span-3 lg:col-span-3 flex-col items-center justify-center space-y-6 animate-pulse h-full">
           {/* Main Image Skeleton */}
-          <div className="aspect-[4/3] bg-gray-200 rounded-2xl shadow-2xl w-full max-w-2xl"></div>
-          
+          {/* <div className="aspect-[4/3] bg-gray-200 rounded-2xl shadow-2xl w-full max-w-2xl"></div> */}
+        
           {/* Controls Skeleton */}
           <div className="flex justify-center items-center gap-6">
             <div className="flex gap-2">
@@ -90,7 +90,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
   };
 
   return (
-  <section className="relative bg-white min-h-screen overflow-hidden -mt-24 sm:-mt-28 md:-mt-32 lg:-mt-32">
+  // <section className="relative bg-white min-h-screen overflow-hidden -mt-24 sm:-mt-28 md:-mt-32 lg:-mt-32">
+  <section className="relative bg-white  sm:-mt-28 md:-mt-32 lg:-mt-32">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl" />
@@ -99,7 +100,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl h-screen">
+      {/* <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl h-screen"> */}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12 h-full items-center py-2 sm:py-4 md:py-8 lg:py-12">
           
           {/* Left Content - Text Section (40% width on medium+ screens) */}
@@ -165,7 +167,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             {/* Main Image Container */}
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm w-full max-w-2xl group">
+            <div className="relative aspect-[5/3] rounded-full mt-12 overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm w-full max-w-2xl group">
               <AnimatePresence mode="sync">
                 <motion.img
                   key={currentImageIndex}
