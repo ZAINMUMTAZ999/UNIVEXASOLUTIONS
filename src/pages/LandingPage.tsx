@@ -28,7 +28,7 @@ const LandingPage = () => {
       <div className="fixed bottom-6 right-6 z-50">
         <WhatsAppLinkButton 
           phoneNumber="923246288217" 
-          message="Hi, I'm interested in your services!" 
+          message="Hi,I'm interested in your services!" 
         />
       </div>
      
