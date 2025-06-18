@@ -21,20 +21,20 @@ const imageList = [img1, img2, img3, img4, img5];
 
 const LandingPage = () => {
   return (
-    <div className="">
+    <>
       <HeroSection images={imageList} />
       
       {/* Fixed WhatsApp Button - Positioned as floating button */}
-      <div className="fixed bottom-6 right-6 z-50 sm:bottom-4 sm:right-4">
+      <div className="fixed bottom-6 right-6 z-50">
         <WhatsAppLinkButton 
           phoneNumber="923459280907" 
           message="Hi, I'm interested in your services!" 
         />
       </div>
-     <div className="mt-20 sm:mt-28">
-  <TechStack />
-</div>
+      <span className=" mt-28">
 
+      <TechStack/>
+      </span>
       <WorkingMethodology/>
       
       <motion.div
@@ -42,9 +42,7 @@ const LandingPage = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        {/* <h1 className="flex justify-center text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-gray-900"> */}
-        <h1 className="text-center px-4 text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-gray-900">
-
+        <h1 className="flex justify-center text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-gray-900">
           <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent inline-block">
             Customer's Reviews
           </span>
@@ -54,7 +52,7 @@ const LandingPage = () => {
       <GetallReviews/>
       <BlogsLaningPage/>
       {/* Add other sections here as needed */}
-    </div>
+    </>
   );
 };
 
