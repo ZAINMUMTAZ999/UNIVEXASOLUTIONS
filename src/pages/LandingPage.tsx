@@ -31,10 +31,10 @@ const LandingPage = () => {
           message="Hi, I'm interested in your services!" 
         />
       </div>
-      <span className=" mt-28">
+     
 
       <TechStack/>
-      </span>
+    
       <WorkingMethodology/>
       
       <motion.div
