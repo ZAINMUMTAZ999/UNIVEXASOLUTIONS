@@ -13,12 +13,11 @@ const HomeLayout = ({ children }: Props) => {
       {/* Header with sticky positioning */}
       <Header />
       
-      {/* Main content area with proper spacing and responsive padding */}
-      <main className="">
-        <div > 
+   
+        < > 
           {children}
-        </div>
- </main>
+        </>
+ 
       <Footer />
      
     </div>
