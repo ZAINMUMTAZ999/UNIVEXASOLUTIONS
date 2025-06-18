@@ -125,8 +125,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Join the future of technology. Let's build scalable, beautiful, and 
-              meaningful digital solutions together.
+            Empowering every business with  digital presence — join us to create meaningful, smart solutions that drive impact!
             </motion.p>
 
             <motion.div
