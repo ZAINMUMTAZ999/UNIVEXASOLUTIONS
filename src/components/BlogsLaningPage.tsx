@@ -7,6 +7,9 @@ import { motion } from 'framer-motion';
 import { allBlogsApi } from '@/Api';
 import { Link } from 'react-router-dom';
 
+
+
+
 // Helper function to format the date
 const formatDate = (dateString: string | Date): string => {
   const date = new Date(dateString);
@@ -38,7 +41,7 @@ export const BlogsLaningPage = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-48 text-lg text-gray-700">
-        Loading blogs...
+        <BlogsLandingPageSkeleton/>
       </div>
     );
   }
@@ -133,6 +136,85 @@ const top3Blogs = displayedBlogs
       ) : (
         <p className="text-center text-gray-600 text-lg mt-8">No blogs to display.</p>
       )}
+    </div>
+  );
+};
+// Skeleton component for individual elements
+const Skeleton = ({ className = "" }) => (
+  <div className={`animate-pulse bg-gray-200 rounded ${className}`}></div>
+);
+const ShimmerSkeleton = ({ className = "" }) => (
+  <div className={`relative overflow-hidden bg-gray-200 rounded ${className}`}>
+    <div className="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/60 to-transparent"></div>
+  </div>
+);
+export const BlogsLandingPageSkeleton = () => {
+  return (
+    <div className="container mx-auto p-4 md:p-8">
+      {/* Header Skeleton */}
+      <div className="mb-8">
+        <div className="flex justify-center">
+          <ShimmerSkeleton className="h-12 sm:h-16 lg:h-20 xl:h-24 w-80 sm:w-96 lg:w-[32rem]" />
+        </div>
+      </div>
+
+      {/* Blog Cards Grid Skeleton */}
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-6 gap-6">
+        {[1, 2, 3].map((index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 flex flex-col relative"
+          >
+            {/* Image Skeleton */}
+            <div className="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-t-lg">
+              <ShimmerSkeleton className="w-full h-full" />
+              {/* Date badge skeleton */}
+              <div className="absolute bottom-3 left-3">
+                <Skeleton className="h-6 w-20 bg-gray-300" />
+              </div>
+            </div>
+
+            {/* Content Skeleton */}
+            <div className="p-4 flex flex-col flex-grow space-y-3">
+              {/* Title Skeleton */}
+              <div className="space-y-2">
+                <ShimmerSkeleton className="h-6 w-full" />
+                <ShimmerSkeleton className="h-6 w-3/4" />
+              </div>
+
+              {/* Description Skeleton */}
+              <div className="flex-grow space-y-2">
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-5/6" />
+                <Skeleton className="h-4 w-4/5" />
+              </div>
+
+              {/* Read More Link Skeleton */}
+              <div className="mt-auto pt-2">
+                <div className="flex items-center">
+                  <Skeleton className="h-4 w-20" />
+                  <Skeleton className="h-4 w-4 ml-1" />
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Optional: Loading text */}
+      <div className="flex items-center justify-center mt-8">
+        <div className="flex items-center space-x-2">
+          <div className="flex space-x-1">
+            <div className="w-2 h-2 bg-purple-600 rounded-full animate-bounce"></div>
+            <div className="w-2 h-2 bg-purple-600 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+            <div className="w-2 h-2 bg-purple-600 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+          </div>
+          <span className="text-gray-600 ml-2">Loading latest blogs...</span>
+        </div>
+      </div>
+
+    
     </div>
   );
 };
