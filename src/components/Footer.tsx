@@ -8,7 +8,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <Link to="/"  className="text-2xl font-bold mb-4 tracking-wide">UNIVEXA</Link>
+          <Link to="/"  className="text-2xl font-bold mb-4 tracking-wide">
+            <span className="text-lg sm:text-xl font-bold text-blue-600">
+                <b>
+                  Sekai
+                  </b>
+                Space
+              </span></Link>
           <p className="text-sm  text-black">
             Building innovative, scalable digital solutions to empower your startup.
           </p>
