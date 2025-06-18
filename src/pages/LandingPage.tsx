@@ -21,7 +21,7 @@ const imageList = [img1, img2, img3, img4, img5];
 
 const LandingPage = () => {
   return (
-    <>
+    <section className="mt-7">
       <HeroSection images={imageList} />
       
       {/* Fixed WhatsApp Button - Positioned as floating button */}
@@ -31,7 +31,7 @@ const LandingPage = () => {
           message="Hi, I'm interested in your services!" 
         />
       </div>
-      <span className="mt-28">
+      <span className="mt-2">
 
       <TechStack/>
       </span>
@@ -52,7 +52,7 @@ const LandingPage = () => {
       <GetallReviews/>
       <BlogsLaningPage/>
       {/* Add other sections here as needed */}
-    </>
+    </section>
   );
 };
 
