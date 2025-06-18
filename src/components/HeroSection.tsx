@@ -90,7 +90,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
   };
 
   return (
-    <section className="relative bg-white min-h-screen overflow-hidden -mt-24 sm:-mt-28 md:-mt-32 lg:-mt-32">
+  <section className="relative bg-white min-h-screen overflow-hidden -mt-24 sm:-mt-28 md:-mt-32 lg:-mt-32">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl" />
@@ -137,7 +137,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
             >
               <Link to="/contactUs" className="flex-shrink-0">
                 <motion.button
-                  className="group relative w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden text-sm md:text-base lg:text-lg min-w-[120px] md:min-w-[140px] lg:min-w-[160px] flex items-center justify-center"
+                  className="group relative w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden text-sm md:text-base lg:text-lg min-w-[120px] md:min-w-[140px] lg:min-w-[160px] flex items-center justify-center"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                 >
