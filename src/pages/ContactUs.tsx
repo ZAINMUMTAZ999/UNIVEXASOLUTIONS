@@ -32,7 +32,7 @@ const ContactUs = () => {
 
   return (
     <form
-      className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 relative overflow-hidden"
+      className="min-h-screen bg-white relative overflow-hidden"
       onSubmit={onSubmits}
     >
       {/* Background + Plus Pattern + Robot (unchanged) */}
