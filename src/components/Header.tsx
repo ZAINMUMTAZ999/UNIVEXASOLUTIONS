@@ -93,12 +93,13 @@ const Header = () => {
                 )}
               </div>
             ) : (
-              <Link
-                to="/login"
-                className="text-indigo-600 hover:text-indigo-800 font-semibold px-3 py-2 rounded-md border border-indigo-200 hover:border-indigo-300 transition-all"
-              >
-                Sign In
-              </Link>
+              undefined
+              // <Link
+              //   to="/login"
+              //   className="text-indigo-600 hover:text-indigo-800 font-semibold px-3 py-2 rounded-md border border-indigo-200 hover:border-indigo-300 transition-all"
+              // >
+              //   Sign In
+              // </Link>
             )}
           </nav>
 
@@ -178,7 +179,7 @@ const Header = () => {
               </>
             )}
             
-            {!isLogged && (
+            {/* {!isLogged && (
               <Link
                 to="/login"
                 className="text-indigo-600 hover:text-indigo-800 hover:bg-indigo-50 block px-3 py-2 rounded-md text-base font-semibold border border-indigo-200 hover:border-indigo-300 transition-all mx-3 text-center"
@@ -186,7 +187,7 @@ const Header = () => {
               >
                 Sign In
               </Link>
-            )}
+            )} */}
           </div>
         </div>
       )}

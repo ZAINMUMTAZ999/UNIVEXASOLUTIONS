@@ -17,13 +17,14 @@
   }: {
     children: React.ReactNode;
   }) => {
-    const [title, setTitle] = useState<string>("");
+    const [title, setTitle] = useState<string>(()=>sessionStorage.getItem("title") || "");
   
     const saveSearchValues = (
       title: string,
       
     ) => {
       setTitle(title);
+      sessionStorage.setItem("title",title)
     
     };
   
