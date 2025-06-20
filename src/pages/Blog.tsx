@@ -106,7 +106,7 @@ const SingleBlogView = ({ blog, onBack }: SingleBlogViewProps) => {
 
         <div className="p-8">
           <div className="flex justify-between items-start mb-4">
-            <h1 className="sm:text-lg sm:tracking-tighter text-3xl font-bold flex-1">{blog.title}</h1>
+            <h1 className="tracking-tighter text-3xl font-bold flex-1">{blog.title}</h1>
             <div className="text-sm text-gray-500 ml-4 flex-shrink-0">
               <div className="flex items-center sm:text-sm sm:mr-2">
                 <svg
@@ -127,7 +127,7 @@ const SingleBlogView = ({ blog, onBack }: SingleBlogViewProps) => {
               </div>
             </div>
           </div>
-          <div className="text-gray-700 mb-8 sm:text-sm">
+          <div className="text-gray-700 mb-8 ">
             <p>{blog.description}</p>
           </div>
           <div className="border-t border-gray-200 pt-8 sm:text-sm">
