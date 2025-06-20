@@ -74,7 +74,7 @@ interface SingleBlogViewProps {
 
 const SingleBlogView = ({ blog, onBack }: SingleBlogViewProps) => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl">
+    <div className="sm:text-sm   container mx-auto px-4 py-8 max-w-4xl">
       <button
         onClick={onBack}
         className="mb-6 flex items-center text-blue-600 hover:text-blue-800"
@@ -106,9 +106,9 @@ const SingleBlogView = ({ blog, onBack }: SingleBlogViewProps) => {
 
         <div className="p-8">
           <div className="flex justify-between items-start mb-4">
-            <h1 className="text-3xl font-bold flex-1">{blog.title}</h1>
+            <h1 className="sm:text-lg sm:tracking-tighter text-3xl font-bold flex-1">{blog.title}</h1>
             <div className="text-sm text-gray-500 ml-4 flex-shrink-0">
-              <div className="flex items-center">
+              <div className="flex items-center sm:text-sm sm:mr-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4 mr-1"
@@ -127,10 +127,10 @@ const SingleBlogView = ({ blog, onBack }: SingleBlogViewProps) => {
               </div>
             </div>
           </div>
-          <div className="text-gray-700 mb-8">
+          <div className="text-gray-700 mb-8 sm:text-sm">
             <p>{blog.description}</p>
           </div>
-          <div className="border-t border-gray-200 pt-8">
+          <div className="border-t border-gray-200 pt-8 sm:text-sm">
             <div
               className="prose max-w-none"
               dangerouslySetInnerHTML={{
@@ -218,7 +218,7 @@ const AllBlogs = () => {
             )}
             <div className="p-6 flex flex-col flex-1">
               <h2 className="text-xl font-bold mb-2">{blog.title}</h2>
-              <p className="text-gray-700 line-clamp-3 mb-4">
+              <p className="text-gray-700 text-sm line-clamp-3 mb-4">
                 {blog.description}
               </p>
 
