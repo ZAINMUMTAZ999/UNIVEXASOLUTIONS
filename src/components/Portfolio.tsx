@@ -196,20 +196,9 @@ const Portfolio = () => {
         <div className="bg-gray-50 min-h-screen font-sans">
             <main>
                 <PortfolioSection />
-                <Section title="Ready to Start a Project?">
-                    <div className="text-center">
-                        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">Let's build something great together. Contact us to see how our solutions can help you achieve your business goals.</p>
-                        <button className="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors duration-300">
-                            Get In Touch
-                        </button>
-                    </div>
-                </Section>
+               
             </main>
-            <footer className="bg-gray-800 text-white py-6">
-                <div className="container mx-auto px-4 text-center">
-                    <p>&copy; {new Date().getFullYear()} Univexa Solutions. All Rights Reserved.</p>
-                </div>
-            </footer>
+           
         </div>
     );
 }
