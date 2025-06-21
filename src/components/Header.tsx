@@ -427,6 +427,13 @@ const Header = () => {
                   >
                     DigitalMarketing
                   </Link>
+                  <Link
+              to="/pricing"
+              className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
+            >
+              Pricing
+            </Link>
+
                   {/* Add more service links for mobile */}
                 </div>
               )}
