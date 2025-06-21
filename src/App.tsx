@@ -19,6 +19,7 @@ import MobileApp from "./components/services/MobileApp";
 import CloudSolutions from "./components/services/CloudSolutions";
 import DigitalMarketing from "./components/services/DigitalMarketing";
 import Pricing from "./pages/Pricing";
+import AboutUs from "./pages/AboutUs";
 
 // Create a ProtectedRoute component
 const ProtectedRoute = ({ 
@@ -130,6 +131,14 @@ const App = () => {
         
             <HomeLayout>
               <DigitalMarketing
+               />
+            </HomeLayout>
+        
+        } />
+        <Route path="/aboutUs" element={
+        
+            <HomeLayout>
+              <AboutUs
                />
             </HomeLayout>
         

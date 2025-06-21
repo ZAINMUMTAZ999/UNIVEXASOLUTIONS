@@ -308,6 +308,12 @@ const Header = () => {
               Contact Us
             </Link>
             <Link
+              to="/aboutUs"
+              className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
+            >
+              About
+            </Link>
+            <Link
               to="/allBlogs"
               className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
             >
@@ -446,6 +452,13 @@ const Header = () => {
               onClick={closeMobileMenu}
             >
               Contact Us
+            </Link>
+            <Link
+              to="/aboutUs"
+              className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+              onClick={closeMobileMenu}
+            >
+              About Us
             </Link>
             <Link
               to="/allBlogs"
