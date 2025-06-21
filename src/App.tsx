@@ -17,6 +17,7 @@ import LandingPage from "./pages/LandingPage";
 import WebApp from "./components/services/WebApp";
 import MobileApp from "./components/services/MobileApp";
 import CloudSolutions from "./components/services/CloudSolutions";
+import DigitalMarketing from "./components/services/DigitalMarketing";
 
 // Create a ProtectedRoute component
 const ProtectedRoute = ({ 
