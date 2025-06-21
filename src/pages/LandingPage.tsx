@@ -16,6 +16,7 @@ import { GetallReviews } from "@/components/GetallReviews";
 import { motion } from 'framer-motion';
 // import { Link } from "react-router-dom";
 import WhatsAppLinkButton from "@/components/WA";
+import YearsExperience from "./YearsExperience";
 
 const imageList = [img1, img2, img3, img4, img5];
 
@@ -51,6 +52,7 @@ const LandingPage = () => {
       </motion.div>
       
       <GetallReviews/>
+      <YearsExperience/>
       <BlogsLaningPage/>
       {/* Add other sections here as needed */}
     </section>
