@@ -90,9 +90,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
   };
 
   return (
-  // <section className="relative bg-white min-h-screen overflow-hidden -mt-24 sm:-mt-28 md:-mt-32 lg:-mt-32">
-  // <section className="relative bg-white  sm:-mt-28 md:-mt-32 lg:-mt-32">
-  <section className="relative bg-white sm:mt-7 md:-mt-8 lg:-mt-8">
+
+  <section className="relative bg-white sm:mt-7 md:-mt-8 lg:-space-y-20 ">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl" />
@@ -113,56 +112,89 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="space-y-6"
             >
-              <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight">
-                Empower Your{" "}
-                <span className="bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
-                  Startup
-                </span>{" "}
-                with Innovation
-              </h1>
-            </motion.div>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight">
+            The
+             
+                <span className="bg-gradient-to-r ml-2 from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
+                 {/* Startup Success */}
+                Tech
+             {" "}
+                </span>
 
+              Partner for
+                <span className="bg-gradient-to-r ml-2 from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
+                 {/* Startup Success */}
+               Startup  
+                
+             {" "}
+                </span>
+               Success  
+                 
+             
+                
+              </h1>
+              <div className="inline-flex items-center   bg-gradient-to-r from-purple-100 to-blue-100 border border-purple-200/50 rounded">
+                <span className="text-sm font-mono text-purple-700 tracking-wide">
+                 • Web Apps • Mobile Apps • Digital Marketing • WordPress <br />
+                 • Cloud Solutions
+                </span>
+              </div>
+            </motion.div>
+           
             <motion.p
               className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed font-light"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-            Empowering every business with  digital presence — join us to create meaningful, smart solutions that drive impact!
+           From concept to launch, we deliver the complete digital ecosystem your startup needs to compete and scale
             </motion.p>
 
-            <motion.div
-              className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4 md:pt-6"
+           
+             <motion.div
+              className="flex flex-col sm:flex-row gap-4 md:gap-6 pt-6 md:pt-8"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <Link to="/contactUs" className="flex-shrink-0">
                 <motion.button
-                  className="group relative w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden text-sm md:text-base lg:text-lg min-w-[120px] md:min-w-[140px] lg:min-w-[160px] flex items-center justify-center"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
+                  className="group relative w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden text-base md:text-lg lg:text-xl min-w-[160px] md:min-w-[180px] lg:min-w-[200px] flex items-center justify-center transform hover:scale-105"
+                  whileHover={{ scale: 1.05, y: -3 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <span className="relative z-10">Get Started</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <span className="relative z-10 flex items-center">
+                    Get Started Now
+                    <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-700 via-blue-700 to-indigo-800 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </motion.button>
               </Link>
 
               <Link to="/services" className="flex-shrink-0">
                 <motion.button
-                  className="group relative w-full sm:w-auto px-8 py-4 bg-white border-2 border-gray-200 text-gray-700 font-semibold rounded-xl hover:border-purple-300 hover:bg-gray-50 transition-all duration-300 text-base lg:text-lg min-w-[140px] lg:min-w-[160px] flex items-center justify-center"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
+                  className="group relative w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-white/80 backdrop-blur-sm border-2 border-gray-200 text-gray-800 font-bold rounded-2xl hover:border-purple-400 hover:bg-white hover:shadow-xl transition-all duration-500 text-base md:text-lg lg:text-xl min-w-[160px] md:min-w-[180px] lg:min-w-[200px] flex items-center justify-center transform hover:scale-105"
+                  whileHover={{ scale: 1.05, y: -3 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  Learn More
+                  <span className="flex items-center">
+                    Explore Services
+                    <svg className="ml-2 w-5 h-5 group-hover:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </span>
                 </motion.button>
               </Link>
             </motion.div>
+
           </div>
+          
 
           {/* Right Content - Image Carousel (60% width on large screens, hidden on mobile) */}
           <motion.div
-            className="hidden lg:flex lg:col-span-3 flex-col items-center justify-center space-y-8 h-full"
+            className="hidden lg:flex lg:col-span-3 flex-col items-center justify-center space-y-32 h-full"
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}

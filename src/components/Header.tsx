@@ -4,7 +4,7 @@ import { AppContext } from "../context/AppNotify";
 import DropDownUser from "./DropDownUser";
 import { Link } from "react-router-dom";
 // import logo from "../assets/sekaispace_icon_only.svg";
-import logo from "../../public/logo.svg";
+import logo from "../../src/assets/logo.svg";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
@@ -21,8 +21,8 @@ const Header = () => {
 
 
   return (
-    <header className="bg-white shadow-md sticky  top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="bg-transparent  sticky  top-0 z-50">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 ">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo Section */}
           <div className="flex items-center flex-shrink-0">
