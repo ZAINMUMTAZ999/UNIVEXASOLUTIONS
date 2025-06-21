@@ -382,7 +382,7 @@ const Header = () => {
               
               <button
                 onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-                className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors w-full text-left flex items-center"
+                className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50  px-3 py-2 rounded-md text-base font-medium transition-colors w-full text-left flex items-center"
               >
                 Services
                 <ChevronDown
@@ -401,18 +401,25 @@ const Header = () => {
                     Web Development
                   </Link>
                   <Link
-                    to="/services/mobile-app-development"
+                    to="/mobileApp"
                     className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md"
                     onClick={closeMobileMenu}
                   >
                     Mobile App Development
                   </Link>
                   <Link
-                    to="/services/ui-ux-design"
+                    to="/cloudSolutions"
                     className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md"
                     onClick={closeMobileMenu}
                   >
-                    UI/UX Design
+                    CloudSolutions
+                  </Link>
+                  <Link
+                    to="/digitalmarketing"
+                    className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md"
+                    onClick={closeMobileMenu}
+                  >
+                    DigitalMarketing
                   </Link>
                   {/* Add more service links for mobile */}
                 </div>
