@@ -150,7 +150,7 @@ const PricingAndContactPage = () => {
                                                 Stay Tuned
                                              </div>
                                         ) : (
-                                            <Link to="/contactus" className={`block w-full text-center font-semibold py-3 rounded-lg transition-colors ${ plan.isPopular ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-400 text-white hover:bg-blue-500'}`}>
+                                            <Link to="#contact-form" className={`block w-full text-center font-semibold py-3 rounded-lg transition-colors ${ plan.isPopular ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-400 text-white hover:bg-blue-500'}`}>
                                                 Get Started
                                             </Link>
                                         )}
