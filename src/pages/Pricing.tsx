@@ -1,11 +1,12 @@
 
 import { motion } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useMutation } from 'react-query';
 import { Check, Mail, MapPin, Phone, X, Send } from 'lucide-react';
 import { AppContext } from '@/context/AppNotify';
 import { contactUsApi, contactUsTypes } from '@/Api';
+import { useEffect } from 'react';
 
 
 
@@ -14,6 +15,7 @@ import { contactUsApi, contactUsTypes } from '@/Api';
 const PricingAndContactPage = () => {
     const { showToast } = AppContext();
      const navigate = useNavigate();
+      const location = useLocation();
    
      const {
        register,
@@ -32,6 +34,15 @@ const PricingAndContactPage = () => {
      });
    
      const onSubmits = handleSubmit((data) => apiMutate(data));
+      useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.substring(1); // "contact-form"
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    }, [location]); 
 
     const pricingPlans = [
         {
