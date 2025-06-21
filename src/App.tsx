@@ -20,6 +20,7 @@ import CloudSolutions from "./components/services/CloudSolutions";
 import DigitalMarketing from "./components/services/DigitalMarketing";
 import Pricing from "./pages/Pricing";
 import AboutUs from "./pages/AboutUs";
+import ScrollToTop from "./components/ScrolltoTop";
 
 // Create a ProtectedRoute component
 const ProtectedRoute = ({ 
@@ -83,6 +84,7 @@ const App = () => {
   return (
     
     <Router >
+      <ScrollToTop/>
       <Routes>
         {/* Public routes - redirect to dashboard if already logged in */}
            <Route path="/" element={

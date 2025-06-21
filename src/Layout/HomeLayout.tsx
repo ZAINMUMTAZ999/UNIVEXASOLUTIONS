@@ -15,9 +15,9 @@ const HomeLayout = ({ children }: Props) => {
       <Header />
       
    
-        <div className=""> 
+      
           {children}
-        </div>
+       
  
      
       <Footer />
