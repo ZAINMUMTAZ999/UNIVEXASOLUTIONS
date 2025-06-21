@@ -289,6 +289,13 @@ const Header = () => {
                   >
                     Cloud Solutions
                   </Link>
+                  <Link
+                    to="/digitalmarketing"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsServicesDropdownOpen(false)}
+                  >
+                    Digital Marketing
+                  </Link>
                   {/* Add more service links as needed */}
                 </div>
               )}

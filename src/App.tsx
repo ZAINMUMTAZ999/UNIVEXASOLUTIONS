@@ -13,7 +13,7 @@ import { AddReview } from "./components/AddReview";
 
 import { GetallReviews } from "./components/GetallReviews";
 import LandingPage from "./pages/LandingPage";
-import Services from "./pages/Services";
+// import Services from "./pages/Services";
 import WebApp from "./components/services/WebApp";
 import MobileApp from "./components/services/MobileApp";
 import CloudSolutions from "./components/services/CloudSolutions";
@@ -124,6 +124,14 @@ const App = () => {
             </HomeLayout>
         
         } />
+        <Route path="/digitalmarketing" element={
+        
+            <HomeLayout>
+              <DigitalMarketing
+               />
+            </HomeLayout>
+        
+        } />
         
         <Route path="/login" element={
          
@@ -132,13 +140,7 @@ const App = () => {
             </HomeLayout>
     
         } />
-        <Route path="/services" element={
-         
-            <HomeLayout>
-              <Services />
-            </HomeLayout>
-    
-        } />
+      
      
       
         <Route path="/GetallReviews" element={
