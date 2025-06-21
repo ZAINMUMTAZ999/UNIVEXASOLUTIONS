@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Check, X } from 'lucide-react'; // Using lucide-react for icons
 import { Link } from 'react-router-dom';
