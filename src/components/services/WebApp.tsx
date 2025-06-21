@@ -1,18 +1,19 @@
 import React from 'react';
+import { BiSolidCustomize } from "react-icons/bi";
+import { MdOutlineComputer } from "react-icons/md";
 import { motion } from 'framer-motion';
-import { 
-    ShoppingCart, 
-    Code,
-    CheckCircle2, // Icon for Testing
-    Layers3,      // Icon for Next.js
-    Component,    // Icon for React.js
-    Type,         // Icon for TypeScript
-    Server,       // Icon for Node.js
-    Database,     // Icon for MongoDB
-    BotMessageSquare, // Icon for Express.js
-    Wind,         // Icon for Tailwind CSS
-    TestTube2     // Icon for Software Testing
-} from 'lucide-react';
+import {
+  SiMongodb,
+  SiExpress,
+  SiReact,
+  SiNextdotjs,
+ 
+  SiNodedotjs,
+  SiTypescript,
+  SiTestinglibrary,
+  SiNextui,
+  SiTailwindcss
+} from "react-icons/si";
 
 // Define a type for a single technology object for better type safety
 interface Technology {
@@ -23,16 +24,16 @@ interface Technology {
 const WebApp: React.FC = () => {
     // Array of technologies for the "What we offer" section
     const technologies: Technology[] = [
-        { name: 'Ecommerce', icon: <ShoppingCart size={22} className="text-indigo-400" /> },
-        { name: 'Custom Web Apps', icon: <Code size={22} className="text-indigo-400" /> },
-        { name: 'Next.js', icon: <Layers3 size={22} className="text-indigo-400" /> },
-        { name: 'React.js', icon: <Component size={22} className="text-indigo-400" /> },
-        { name: 'TypeScript', icon: <Type size={22} className="text-indigo-400" /> },
-        { name: 'Node.js', icon: <Server size={22} className="text-indigo-400" /> },
-        { name: 'MongoDB', icon: <Database size={22} className="text-indigo-400" /> },
-        { name: 'Express.js', icon: <BotMessageSquare size={22} className="text-indigo-400" /> },
-        { name: 'Tailwind CSS', icon: <Wind size={22} className="text-indigo-400" /> },
-        { name: 'Software Testing', icon: <TestTube2 size={22} className="text-indigo-400" /> },
+        { name: 'Ecommerce', icon: <MdOutlineComputer size={22} className="text-indigo-400" /> },
+        { name: 'Custom Web Apps', icon: <BiSolidCustomize  size={22} className="text-indigo-400" /> },
+        { name: 'Next.js', icon: <SiNextui size={22} className="text-indigo-400" /> },
+        { name: 'React.js', icon: <SiReact size={22} className="text-indigo-400" /> },
+        { name: 'TypeScript', icon: <SiTypescript size={22} className="text-indigo-400" /> },
+        { name: 'Node.js', icon: <SiNodedotjs size={22} className="text-indigo-400" /> },
+        { name: 'MongoDB', icon: <SiMongodb size={22} className="text-indigo-400" /> },
+        { name: 'Express.js', icon: <SiExpress size={22} className="text-indigo-400" /> },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss size={22} className="text-indigo-400" /> },
+        { name: 'Software Testing', icon: <SiTestinglibrary size={22} className="text-indigo-400" /> },
     ];
     
     // Animation variants for container elements
