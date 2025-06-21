@@ -53,7 +53,7 @@ const Footer = () => {
             <a href="#" className="hover:text-white"><Linkedin size={20} /></a>
           </div>
           <p className="text-sm  text-black">Email: hello@sekaisapce.com</p>
-          <p className="text-sm  text-black">Phone: +92-324-6288217</p>
+          <p className="text-sm  text-black">Phone: +92324-6288217</p>
         </div>
       </div>
 

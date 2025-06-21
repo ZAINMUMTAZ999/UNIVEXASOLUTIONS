@@ -9,18 +9,20 @@ type Props = {
 
 const HomeLayout = ({ children }: Props) => {
   return (
+  
     <div className="min-h-screen flex flex-col bg-white">
-      {/* Header with sticky positioning */}
+
       <Header />
       
    
-        < > 
+        <div className=""> 
           {children}
-        </>
+        </div>
  
-      <Footer />
      
+      <Footer />
     </div>
+   
   );
 };
 
