@@ -15,6 +15,7 @@ import { GetallReviews } from "./components/GetallReviews";
 import LandingPage from "./pages/LandingPage";
 import Services from "./pages/Services";
 import WebApp from "./components/services/WebApp";
+import MobileApp from "./components/services/MobileApp";
 
 // Create a ProtectedRoute component
 const ProtectedRoute = ({ 
@@ -105,6 +106,13 @@ const App = () => {
         
             <HomeLayout>
               <WebApp />
+            </HomeLayout>
+        
+        } />
+        <Route path="/mobileApp" element={
+        
+            <HomeLayout>
+              <MobileApp />
             </HomeLayout>
         
         } />
