@@ -16,6 +16,7 @@ import LandingPage from "./pages/LandingPage";
 import Services from "./pages/Services";
 import WebApp from "./components/services/WebApp";
 import MobileApp from "./components/services/MobileApp";
+import CloudSolutions from "./components/services/CloudSolutions";
 
 // Create a ProtectedRoute component
 const ProtectedRoute = ({ 
@@ -113,6 +114,13 @@ const App = () => {
         
             <HomeLayout>
               <MobileApp />
+            </HomeLayout>
+        
+        } />
+        <Route path="/cloudSolutions" element={
+        
+            <HomeLayout>
+              <CloudSolutions />
             </HomeLayout>
         
         } />

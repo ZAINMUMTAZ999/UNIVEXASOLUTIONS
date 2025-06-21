@@ -283,11 +283,11 @@ const Header = () => {
                     Mobile App Development
                   </Link>
                   <Link
-                    to="/services/ui-ux-design"
+                    to="/cloudSolutions"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setIsServicesDropdownOpen(false)}
                   >
-                    UI/UX Design
+                    Cloud Solutions
                   </Link>
                   {/* Add more service links as needed */}
                 </div>
