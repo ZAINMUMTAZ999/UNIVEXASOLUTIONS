@@ -6,7 +6,7 @@ import {
   SiMongodb,
   SiExpress,
   SiReact,
-  SiNextdotjs,
+//   SiNextdotjs,
  
   SiNodedotjs,
   SiTypescript,
@@ -14,6 +14,7 @@ import {
   SiNextui,
   SiTailwindcss
 } from "react-icons/si";
+import { CheckCircle2 } from 'lucide-react';
 
 // Define a type for a single technology object for better type safety
 interface Technology {
