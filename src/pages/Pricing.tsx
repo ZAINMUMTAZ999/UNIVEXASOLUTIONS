@@ -82,7 +82,7 @@ const PricingAndContactPage = () => {
     ];
 
     return (
-        <main className="bg-gray-50">
+        <main className="bg-gray-50 ">
             {/* --- Pricing Section --- */}
             <section className="w-full bg-gray-50 text-gray-900 py-16 md:py-24">
                 <div className="container mx-auto px-4">
@@ -93,10 +93,10 @@ const PricingAndContactPage = () => {
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-black">
+                        <h2 className=" -mt-6  text-lg md:text-5xl font-bold tracking-tight text-black">
                             Find the Perfect Plan for You
                         </h2>
-                        <p className="mt-3 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                        <p className="  text-xs md:text-xl text-gray-600 max-w-2xl mx-auto">
                             Transparent pricing for projects of all sizes. Let's build something amazing together.
                         </p>
                     </motion.div>
@@ -118,10 +118,10 @@ const PricingAndContactPage = () => {
                                             <span className="bg-blue-500 text-white text-xs font-bold px-4 py-1 rounded-full uppercase">Most Popular</span>
                                         </div>
                                     )}
-                                    <h3 className="text-2xl font-semibold">{plan.name}</h3>
-                                    <p className="mt-1 text-gray-500 min-h-[40px]">{plan.description}</p>
-                                    <div className="mt-6">
-                                        <span className={`text-4xl font-bold ${plan.isComingSoon ? 'text-gray-400' : 'text-black'}`}>{plan.price}</span>
+                                    <h3 className="text-lg text-blue-600 underline tracking-wide md:text-2xl lg:text-2xl font-extrabold">{plan.name}</h3>
+                                    <p className="mt-1 text-sm md:text-lg lg:text-lg text-gray-500 min-h-[40px]">{plan.description}</p>
+                                    <div className="mt-0 md:mt-3">
+                                        <span className={`text-lg md:text-4xl font-bold ${plan.isComingSoon ? 'text-gray-400' : 'text-black'}`}>{plan.price}</span>
                                     </div>
                                     <div className="flex-grow">
                                         {plan.isComingSoon ? (
@@ -132,13 +132,13 @@ const PricingAndContactPage = () => {
                                         ) : (
                                             <ul className="mt-8 space-y-4">
                                                 {plan.features.map((feature, fIndex) => (
-                                                    <li key={fIndex} className="flex items-center">
+                                                    <li key={fIndex} className="flex items-center text-sm tracking-tight -mt-8 md:text-lg md:mt-3">
                                                         {feature.included ? (
-                                                            <Check className="h-5 w-5 text-blue-500 mr-3 flex-shrink-0" />
+                                                            <Check className="h-5 w-5 text-blue-500 mr-1 md:mr-3 flex-shrink-0" />
                                                         ) : (
                                                             <X className="h-5 w-5 text-gray-400 mr-3 flex-shrink-0" />
                                                         )}
-                                                        <span className={`${feature.included ? 'text-gray-800' : 'text-gray-500 line-through'}`}>{feature.text}</span>
+                                                        <span className={`${feature.included ? 'text-gray-800 ' : 'text-gray-500 line-through'}`}>{feature.text}</span>
                                                     </li>
                                                 ))}
                                             </ul>
