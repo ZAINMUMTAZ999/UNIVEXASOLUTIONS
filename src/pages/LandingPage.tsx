@@ -17,6 +17,7 @@ import { motion } from 'framer-motion';
 // import { Link } from "react-router-dom";
 import WhatsAppLinkButton from "@/components/WA";
 import YearsExperience from "./YearsExperience";
+import Portfolio from "@/components/Portfolio";
 
 const imageList = [img1, img2, img3, img4, img5];
 
@@ -38,6 +39,7 @@ const LandingPage = () => {
       <TechStack/>
       </span>
       <WorkingMethodology/>
+      <Portfolio/>
       
       <motion.div
         initial={{ y: -30, opacity: 0 }}
