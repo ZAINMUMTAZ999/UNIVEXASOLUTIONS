@@ -12,7 +12,7 @@ import { BsCaretDownFill } from "react-icons/bs";
 
 import Logout from "./Logout";
 import { DropdownMenuLabel } from "@radix-ui/react-dropdown-menu";
-import user from "../../src/assets/user.png"
+import user from "../../src/assets/user.webp"
 
 
 const DropDownUser = () => {
