@@ -1,5 +1,4 @@
-// components/Footer.tsx
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -42,27 +41,43 @@ const Footer = () => {
         </div>
 
         {/* Social + Contact */}
-        <div >
-          <h3 className="text-lg font-semibold mb-4  text-black">Connect with Us</h3>
-          <div className="flex space-x-4 mb-4  text-black">
-            <a href="#" className="hover:text-white"><Facebook size={20} /></a>
-            <a href="#" className="hover:text-white"><Twitter size={20} /></a>
-            <a href="#" className="hover:text-white"><Instagram size={20} /></a>
-            <a href="#" className="hover:text-white"><Linkedin size={20} /></a>
-          </div>
-           <a 
+      <div>
+  <h3 className="text-lg font-semibold mb-4 text-black">Connect with Us</h3>
+  
+  {/* --- Social Media Links --- */}
+  <div className="flex space-x-4 mb-4 text-black">
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Facebook size={20} /></a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Twitter size={20} /></a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Instagram size={20} /></a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Linkedin size={20} /></a>
+  </div>
+
+  {/* --- Clickable Email and Phone with Icons --- */}
+  <div className="space-y-2"> {/* Increased spacing slightly for better separation */}
+    
+    {/* Clickable Email with Icon */}
+    <a 
       href="mailto:mzainmumtaz99@gmail.com" 
-      className="text-sm text-black block hover:text-white hover:underline"
+      className="text-sm text-black flex items-center group"
     >
-      Email: mzainmumtaz99@gmail.com
+      <Mail size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-white transition-colors" />
+      <span className="group-hover:underline group-hover:text-white transition-colors">
+        mzainmumtaz99@gmail.com
+      </span>
     </a>
-         <a 
+    
+    {/* Clickable Phone with Icon */}
+    <a 
       href="tel:+923246288217" 
-      className="text-sm text-black block hover:text-white hover:underline"
+      className="text-sm text-black flex items-center group"
     >
-      Phone: +92324-6288217
+      <Phone size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-white transition-colors" />
+      <span className="group-hover:underline group-hover:text-white transition-colors">
+        +92324-6288217
+      </span>
     </a>
-        </div>
+  </div>
+</div>
       </div>
 
       {/* Bottom Line */}
