@@ -60,9 +60,13 @@ const Footer = () => {
         className="text-sm text-black flex items-center group"
       >
         <Mail size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-white transition-colors" />
-        <span className="group-hover:underline group-hover:text-white transition-colors">
+        {/* <span className="group-hover:underline group-hover:text-white transition-colors">
           mzainmumtaz99@gmail.com
-        </span>
+        </span> */}
+
+
+         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer" className="group-hover:underline group-hover:text-white transition-colors"><Mail size={20} /></a>
+        
       </a>
 
       {/* Clickable Phone with Icon */}
