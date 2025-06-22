@@ -300,31 +300,34 @@ const Header = () => {
                 </div>
               )}
             </div>
-
-            <Link
-              to="/contactUs"
+             <Link
+              to="/pricing"
               className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
             >
-              Contact Us
+              Pricing
             </Link>
-            <Link
+              <Link
               to="/aboutUs"
               className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
             >
               About
             </Link>
-            <Link
+
+   <Link
               to="/allBlogs"
               className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
             >
               Blogs
             </Link>
             <Link
-              to="/pricing"
+              to="/contactUs"
               className="text-gray-700 hover:text-indigo-600 font-medium transition-colors px-3 py-2 rounded-md"
             >
-              Pricing
+              Contact Us
             </Link>
+          
+         
+           
 
             {isAdmin && (
               <>
@@ -440,22 +443,21 @@ const Header = () => {
               )}
               
             </div>
-
-            <Link
-              to="/contactUs"
+              <Link
+              to="/pricing"
               className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               onClick={closeMobileMenu}
             >
-              Contact Us
+              Pricing
             </Link>
-            <Link
+  <Link
               to="/aboutUs"
               className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               onClick={closeMobileMenu}
             >
               About Us
             </Link>
-            <Link
+             <Link
               to="/allBlogs"
               className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               onClick={closeMobileMenu}
@@ -463,28 +465,32 @@ const Header = () => {
               Blogs
             </Link>
             <Link
-              to="/pricing"
+              to="/contactUs"
               className="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               onClick={closeMobileMenu}
             >
-              Pricing
+              Contact Us
             </Link>
+          
+           
+          
 
             {isAdmin && (
               <>
-                <Link
-                  to="/allContacts"
-                  className="text-gray-700 bg-green-100 hover:bg-green-200 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-                  onClick={closeMobileMenu}
-                >
-                  All Contacts
-                </Link>
+               
                 <Link
                   to="/addBlog"
                   className="text-gray-700 bg-green-100 hover:bg-green-200 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                   onClick={closeMobileMenu}
                 >
                   Add Blog
+                </Link>
+                 <Link
+                  to="/allContacts"
+                  className="text-gray-700 bg-green-100 hover:bg-green-200 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                  onClick={closeMobileMenu}
+                >
+                  All Contacts
                 </Link>
               </>
             )}
