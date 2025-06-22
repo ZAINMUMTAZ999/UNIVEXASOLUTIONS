@@ -72,14 +72,14 @@ const WorkingMethodology = () => {
         </div>
 
         {/* Methodology Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-16">
+        <div className="grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-5 gap-12 mb-16">
           {methodologySteps.map((step, index) => {
             const IconComponent = step.icon;
 
             return (
               <motion.div 
                 key={step.id} 
-                className="relative group"
+                className="relative group "
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -90,7 +90,7 @@ const WorkingMethodology = () => {
                 )}
 
                 {/* Step Container */}
-                <div className="relative z-10 bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 group-hover:border-gray-200 min-h-[480px] flex flex-col">
+                <div className="relative z-10  bg-white p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 group-hover:border-gray-200 sm:max-h-[300px] md:min-h-[700px] flex flex-col w-72 rounded-2xl md:rounded-full">
                   {/* Step Number Circle */}
                   <div className="relative mb-8">
                     <div className={`w-24 h-24 mx-auto rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center relative overflow-hidden ${step.shadowColor} group-hover:scale-110 transition-transform duration-300`}>
@@ -102,24 +102,24 @@ const WorkingMethodology = () => {
 
                   {/* Icon */}
                   <div className="mb-6 flex justify-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-all duration-300 shadow-sm">
+                    <div className="w-16 h-16 md:w-24 md:h:24 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-all duration-300 shadow-sm">
                       <IconComponent className="w-8 h-8 text-gray-700 group-hover:text-blue-600 transition-colors duration-300" />
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="text-center flex-grow flex flex-col">
-                    <h3 className="text-xl font-bold text-gray-800 mb-4 leading-tight group-hover:text-gray-900 transition-colors duration-300">
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 leading-tight group-hover:text-gray-900 transition-colors duration-300">
                       {step.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed flex-grow group-hover:text-gray-700 transition-colors duration-300 text-sm">
+                    <p className="text-gray-600 text-sm md:text-lg leading-relaxed flex-grow group-hover:text-gray-700 transition-colors duration-300 ">
                       {step.description}
                     </p>
                   </div>
 
                   {/* Bottom accent */}
-                  <div className="mt-6 pt-4 border-t border-gray-100">
-                    <div className={`w-12 h-1 bg-gradient-to-r ${step.color} rounded-full mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                  <div className="mt-6 pt-4  border-t border-gray-100">
+                    <div className={`w-16 h-2 bg-gradient-to-r ${step.color} rounded-full mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300`}></div>
                   </div>
 
                   {/* Hover glow effect */}
@@ -130,23 +130,7 @@ const WorkingMethodology = () => {
           })}
         </div>
 
-        {/* Enhanced Stats Section */}
-        {/* <div className="bg-white rounded-3xl p-12 shadow-xl border border-gray-100 mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
-              <div className="text-gray-600">Projects Delivered</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
-              <div className="text-gray-600">Client Satisfaction</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-cyan-600 mb-2">24/7</div>
-              <div className="text-gray-600">Support Available</div>
-            </div>
-          </div>
-        </div> */}
+        
 
         {/* Decorative Line Under Cards */}
         <div className="flex justify-center items-center">
