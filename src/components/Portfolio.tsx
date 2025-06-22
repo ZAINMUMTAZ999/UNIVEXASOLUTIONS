@@ -24,8 +24,8 @@ import p4 from '../assets/projects/p2 (1).webp';
 import p5 from '../assets/projects/p2 (2).webp';
 import p6 from '../assets/projects/p2 (3).webp';
 import p7 from '../assets/projects/6 (1).webp';
-import p8 from '../assets/projects/p2 (2).webp';
-import p9 from '../assets/projects/6 (3).webp';
+import p71 from '../assets/projects/6 (2).webp';
+import p72 from '../assets/projects/6 (3).webp';
 import p10 from '../assets/projects/p7 (1).webp';
 import p11 from '../assets/projects/p7 (2).webp';
 import p12 from '../assets/projects/piz (1).webp';
@@ -66,7 +66,7 @@ const portfolioProjects: Project[] = [
         year: '© 2025',
         // And here...
         imageUrls: [
-         p7,p8,p9
+         p7,p71,p72
         ],
         altText: 'Homepage of the Big Bear Kratom e-commerce website.',
     },
@@ -77,7 +77,7 @@ const portfolioProjects: Project[] = [
         year: '© 2025',
         // And here...
         imageUrls: [
-         p10,p11,p12
+         p10,p11,p15
         ],
         altText: 'Homepage of the Big Bear Kratom e-commerce website.',
     },
@@ -88,7 +88,7 @@ const portfolioProjects: Project[] = [
         year: '© 2024',
         // And here...
         imageUrls: [
-         p13,p14,p15
+         p12,p13,p14
         ],
         altText: 'Homepage of the Big Bear Kratom e-commerce website.',
     },
