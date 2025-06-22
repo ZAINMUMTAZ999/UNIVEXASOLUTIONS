@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 
@@ -130,7 +130,7 @@ const PortfolioCard = ({ project, index }: { project: Project; index: number }) 
             custom={index}
         >
             <div className="relative bg-gray-100 rounded-lg overflow-hidden mb-4 transition-shadow duration-500 ease-in-out group-hover:shadow-xl">
-                <AnimatePresence>
+                <div>
                     <motion.img
                         key={currentImageIndex}
                         src={project.imageUrls[currentImageIndex]}
@@ -147,7 +147,7 @@ const PortfolioCard = ({ project, index }: { project: Project; index: number }) 
                             target.src = 'https://placehold.co/600x400/cccccc/333333?text=Image+Not+Found';
                         }}
                     />
-                </AnimatePresence>
+                </div>
                 {project.imageUrls.length > 1 && (
                     <div className="absolute bottom-2 left-0 right-0 flex justify-center space-x-2">
                         {project.imageUrls.map((_, idx) => (
