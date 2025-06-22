@@ -91,7 +91,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
 
   return (
 
-  <section className="relative bg-white sm:mt-7 md:-mt-8 lg:-space-y-20 ">
+  <section className="relative bg-white   ">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl" />
@@ -100,9 +100,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
       </div>
 
       {/* Main Content Container */}
-      {/* <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl h-screen"> */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12 h-full items-center py-2 sm:py-4 md:py-8 lg:py-12">
+      
+      <div className="relative z-10 container mx-auto px-4 sm:px-6  max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-5  gap-6 md:gap-8 lg:gap-12 h-full items-center py-2 sm:py-4 md:py-8 lg:py-12">
           
           {/* Left Content - Text Section (40% width on medium+ screens) */}
           <div className="md:col-span-2 lg:col-span-2 flex flex-col justify-center space-y-6 md:space-y-8 h-full">
@@ -112,7 +112,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="space-y-6"
             >
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight">
             The
              
                 <span className="bg-gradient-to-r ml-2 from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
