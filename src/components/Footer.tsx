@@ -46,10 +46,10 @@ const Footer = () => {
   
   {/* --- Social Media Links --- */}
   <div className="flex space-x-4 mb-4 text-black">
-    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Facebook size={20} /></a>
-    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Twitter size={20} /></a>
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Instagram size={20} /></a>
-    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Linkedin size={20} /></a>
+    <a href="https://www.facebook.com/share/16V3vs43jQ/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Facebook size={20} /></a>
+    {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Twitter size={20} /></a> */}
+    {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Instagram size={20} /></a> */}
+    {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Linkedin size={20} /></a> */}
   </div>
 
   {/* --- Clickable Email and Phone with Icons --- */}
