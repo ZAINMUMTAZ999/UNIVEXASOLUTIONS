@@ -17,21 +17,21 @@ interface Project {
 // --- IMPORTANT: IMPORT YOUR LOCAL IMAGES HERE ---
 // Add these imports to the top of your component file.
 // Make sure the paths are correct for your folder structure.
-import p1 from '../assets/projects/1(1).png';
-import p2 from '../assets/projects/1(2).png';
-import p3 from '../assets/projects/1(3).png';
-import p4 from '../assets/projects/p2 (1).png';
-import p5 from '../assets/projects/p2 (2).png';
-import p6 from '../assets/projects/p2 (3).png';
-import p7 from '../assets/projects/6 (1).png';
-import p8 from '../assets/projects/p2 (2).png';
-import p9 from '../assets/projects/6 (3).png';
-import p10 from '../assets/projects/p7 (1).png';
-import p11 from '../assets/projects/p7 (2).png';
-import p12 from '../assets/projects/piz (1).png';
-import p13 from '../assets/projects/piz (2).png';
-import p14 from '../assets/projects/piz (3).png';
-import p15 from '../assets/projects/p7 (3).png';
+import p1 from '../assets/projects/1(1).webp';
+import p2 from '../assets/projects/1(2).webp';
+import p3 from '../assets/projects/1(3).webp';
+import p4 from '../assets/projects/p2 (1).webp';
+import p5 from '../assets/projects/p2 (2).webp';
+import p6 from '../assets/projects/p2 (3).webp';
+import p7 from '../assets/projects/6 (1).webp';
+import p8 from '../assets/projects/p2 (2).webp';
+import p9 from '../assets/projects/6 (3).webp';
+import p10 from '../assets/projects/p7 (1).webp';
+import p11 from '../assets/projects/p7 (2).webp';
+import p12 from '../assets/projects/piz (1).webp';
+import p13 from '../assets/projects/piz (2).webp';
+import p14 from '../assets/projects/piz (3).webp';
+import p15 from '../assets/projects/p7 (3).webp';
 
 // ... import all other images you need
 
