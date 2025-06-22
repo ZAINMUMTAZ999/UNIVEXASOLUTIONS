@@ -64,9 +64,13 @@ const Footer = () => {
           mzainmumtaz99@gmail.com
         </span> */}
 
+<a
+  href="mailto:mzainmumtaz99@gmail.com"
+  className="group-hover:underline group-hover:text-white transition-colors"
+>
+  mzainmumtaz99@gmail.com
+</a>
 
-         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer" className="group-hover:underline group-hover:text-white transition-colors"><Mail size={20} /></a>
-        
       </a>
 
       {/* Clickable Phone with Icon */}

@@ -260,13 +260,13 @@ const PricingAndContactPage = () => {
                                             <p className="text-gray-600">Bank Square Plaza,F-11 Markaz,Islamabad, Pakistan</p>
                                         </div>
                                     </div>
-                                    <div className="flex items-start">
+                                    <a   href="mailto:mzainmumtaz99@gmail.com" className="flex items-start">
                                         <Mail className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
                                         <div>
                                             <h4 className="font-semibold">Email Us</h4>
                                             <p className="text-gray-600">mzainmumtaz99@gmail.com</p>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div className="flex items-start">
                                         <Phone className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
                                         <div>

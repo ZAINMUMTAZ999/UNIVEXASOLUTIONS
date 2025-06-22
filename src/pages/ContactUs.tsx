@@ -72,7 +72,7 @@ const ContactUs = () => {
             </a>
 
             {/* Clickable Email Address */}
-            <a href="mailto:mzainmumtaz99@gmail.com" className="flex items-center space-x-4 group">
+            <a   href="mailto:mzainmumtaz99@gmail.com" className="flex items-center space-x-4 group">
               <div className="w-12 h-12 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <Mail className="w-6 h-6" />
               </div>
