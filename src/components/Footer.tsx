@@ -24,11 +24,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-sm text-purple-100">
-            <li><Link to="/services" className="hover:text-white ">Web Development</Link></li>
-            <li><Link to="/services" className="hover:text-white">Mobile Apps</Link></li>
-            <li><Link to="/services" className="hover:text-white">AI Solutions</Link></li>
-            <li><Link to="/services" className="hover:text-white">Cloud Deployment</Link></li>
-            <li><Link to="/services" className="hover:text-white">Digital Marketing</Link></li>
+            <li><Link to="/webApp" className="hover:text-white ">Web Development</Link></li>
+            <li><Link to="/mobileApp" className="hover:text-white">Mobile Apps</Link></li>
+            <li><Link to="/cloudSolutions" className="hover:text-white">Cloud Deployment</Link></li>
+            <li><Link to="/digitalmarketing" className="hover:text-white">Digital Marketing</Link></li>
           </ul>
         </div>
 
@@ -38,7 +37,6 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-purple-100">
             <li><Link to="/about" className="hover:text-white">About Us</Link></li>
             <li><Link to="/allBlogs" className="hover:text-white">Blogs</Link></li>
-            {/* <li><Link to="/careers" className="hover:text-white">Careers</Link></li> */}
             <li><Link to="/contactUs" className="hover:text-white">Contact</Link></li>
           </ul>
         </div>
@@ -52,8 +50,18 @@ const Footer = () => {
             <a href="#" className="hover:text-white"><Instagram size={20} /></a>
             <a href="#" className="hover:text-white"><Linkedin size={20} /></a>
           </div>
-          <p className="text-sm  text-black">Email: hello@sekaisapce.com</p>
-          <p className="text-sm  text-black">Phone: +92324-6288217</p>
+           <a 
+      href="mailto:mzainmumtaz99@gmail.com" 
+      className="text-sm text-black block hover:text-white hover:underline"
+    >
+      Email: mzainmumtaz99@gmail.com
+    </a>
+         <a 
+      href="tel:+923246288217" 
+      className="text-sm text-black block hover:text-white hover:underline"
+    >
+      Phone: +92324-6288217
+    </a>
         </div>
       </div>
 
