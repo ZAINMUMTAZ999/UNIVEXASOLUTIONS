@@ -127,12 +127,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
                   Get Started Now
                 </motion.button>
               </Link>
-              <Link to="/services">
+              <Link to="/allBlogs">
                   <motion.button
                   className="w-full sm:w-auto px-8 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 text-gray-700 font-bold text-lg rounded-xl hover:border-purple-400 hover:bg-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
                   whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
                 >
-                  Explore Services
+                  Learn more
                 </motion.button>
               </Link>
             </motion.div>
