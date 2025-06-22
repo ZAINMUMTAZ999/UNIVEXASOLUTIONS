@@ -102,7 +102,7 @@ const TechStack = () => {
         <div className="absolute bottom-1/4 left-20 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div className="relative z-10  mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         
         {/* Header Section */}
         <div className="flex flex-col items-center text-center space-y-8   lg:mb-20">
@@ -112,7 +112,7 @@ const TechStack = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-4xl"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight ">
+            <h2 className="text-3xl  mt-20 md:-mt-4 sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight ">
               <span className="bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
                 We've got the tools, the team, and the energy to make it happen.
               </span>
@@ -120,10 +120,10 @@ const TechStack = () => {
           </motion.div>
 
           <motion.p
-            className="text-lg sm:text-lg lg:text-xl xl:text-xl  text-gray-600 leading-relaxed font-serif max-w-3xl"
+            className="text-sm md:text-lg lg:text-xl xl:text-xl  text-gray-600 leading-relaxed font-serif max-w-3xl"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
           >
             Whether you're launching a brand, struggling with visibility, or planning your next big move
           </motion.p>
@@ -134,7 +134,7 @@ const TechStack = () => {
         {/* Tech Stack Carousel */}
         <div className="relative">
       
-          <div className="py-2">
+          <div className="mt-12">
             <motion.div
               className="flex items-center gap-6"
               animate={controls}
@@ -144,19 +144,19 @@ const TechStack = () => {
                   key={`${tech.name}-${index}`}
                   onMouseEnter={pauseAnimation}
                   onMouseLeave={resumeAnimation}
-                  className="group flex flex-col items-start justify-between p-16 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 w-[300px] h-[180px] transform transition-all duration-300 ease-in-out flex-shrink-0"
+                   className="group flex flex-col justify-center items-center  p-6 md:p-8 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 w-[180px] min-h-[110px] md:w-[300px] md:min-h-[180px] transform transition-all duration-300 ease-in-out flex-shrink-0"
                   whileHover={{ scale: 1.03, y: -4 }}
-                  style={{ 
-                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" 
+                  style={{
+                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
                   }}
                 >
                   {/* Icon and Title Section */}
-                  <div className="flex items-start space-x-4 w-full">
-                    <div className="text-4xl sm:text-5xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl md:text-5xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className= "flex justify-center items-center text-2xl md:text-4xl sm:text-5xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       {tech.icon}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-lg sm:text-xl font-semibold text-gray-800 leading-tight group-hover:text-purple-700 transition-colors duration-300">
+                      <h3 className="flex items-center justify-start text-sm md:text-lg font-bold text-gray-800 leading-tight group-hover:text-purple-700 transition-colors duration-300">
                         {tech.name}
                       </h3>
                     </div>
@@ -169,7 +169,7 @@ const TechStack = () => {
                         {tech.subIcons.map((subIcon, subIndex) => (
                           <div 
                             key={subIndex} 
-                            className="text-2xl sm:text-3xl opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
+                            className="text-sm md:text-2xl opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
                           >
                             {subIcon}
                           </div>
