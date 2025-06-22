@@ -188,42 +188,7 @@ const PricingAndContactPage = () => {
                     </motion.div>
 
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 max-w-7xl mx-auto">
-                        {/* Contact Info */}
-                        <motion.div 
-                            className="w-full lg:w-1/3"
-                            initial={{ opacity: 0, x: -30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.6 }}
-                        >
-                            <div className="bg-gray-100 p-8 rounded-2xl h-full">
-                                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                                <div className="space-y-6">
-                                    <div className="flex items-start">
-                                        <MapPin className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
-                                        <div>
-                                            <h4 className="font-semibold">Our Office</h4>
-                                            <p className="text-gray-600">F-11 Markaz, Islamabad, Pakistan</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start">
-                                        <Mail className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
-                                        <div>
-                                            <h4 className="font-semibold">Email Us</h4>
-                                            <p className="text-gray-600">contact@sekaispace.com</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start">
-                                        <Phone className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
-                                        <div>
-                                            <h4 className="font-semibold">📞Call Us</h4>
-                                            <p className="text-gray-600">+92-3246288217</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-
+                       
                         {/* Contact Form */}
                         <motion.div 
                             className="w-full lg:w-2/3"
@@ -277,6 +242,42 @@ const PricingAndContactPage = () => {
                                 </div>
                             </form>
                         </motion.div>
+                         {/* Contact Info */}
+                        <motion.div 
+                            className="w-full lg:w-1/3"
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <div className="bg-gray-100 p-8 rounded-2xl h-full">
+                                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                                <div className="space-y-6">
+                                    <div className="flex items-start">
+                                        <MapPin className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-semibold">Our Office</h4>
+                                            <p className="text-gray-600">Bank Square Plaza,F-11 Markaz,Islamabad, Pakistan</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <Mail className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-semibold">Email Us</h4>
+                                            <p className="text-gray-600">mzainmumtaz99@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <Phone className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-semibold">📞Call Us</h4>
+                                            <p className="text-gray-600">+92-3246288217</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+
                     </div>
                 </div>
             </section>
