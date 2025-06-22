@@ -270,7 +270,7 @@ const PricingAndContactPage = () => {
                                     <div className="flex items-start">
                                         <Phone className="h-6 w-6 text-blue-500 mr-4 mt-1 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold">📞Call Us</h4>
+                                            <h4 className="font-semibold">Call Us</h4>
                                             <p className="text-gray-600">+92-3246288217</p>
                                         </div>
                                     </div>
