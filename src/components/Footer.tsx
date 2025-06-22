@@ -53,30 +53,29 @@ const Footer = () => {
   </div>
 
   {/* --- Clickable Email and Phone with Icons --- */}
-  <div className="space-y-2"> {/* Increased spacing slightly for better separation */}
-    
-    {/* Clickable Email with Icon */}
-    <a 
-      href="mailto:mzainmumtaz99@gmail.com" 
-      className="text-sm text-black flex items-center group"
-    >
-      <Mail size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-white transition-colors" />
-      <span className="group-hover:underline group-hover:text-white transition-colors">
-        mzainmumtaz99@gmail.com
-      </span>
-    </a>
-    
-    {/* Clickable Phone with Icon */}
-    <a 
-      href="tel:+923246288217" 
-      className="text-sm text-black flex items-center group"
-    >
-      <Phone size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-white transition-colors" />
-      <span className="group-hover:underline group-hover:text-white transition-colors">
-        +92324-6288217
-      </span>
-    </a>
-  </div>
+   <div className="space-y-2">
+      {/* Clickable Email with Icon */}
+      <a
+        href="mailto:mzainmumtaz99@gmail.com"
+        className="text-sm text-black flex items-center group"
+      >
+        <Mail size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-white transition-colors" />
+        <span className="group-hover:underline group-hover:text-white transition-colors">
+          mzainmumtaz99@gmail.com
+        </span>
+      </a>
+
+      {/* Clickable Phone with Icon */}
+      <a
+        href="tel:+923246288217"
+        className="text-sm text-black flex items-center group"
+      >
+        <Phone size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-white transition-colors" />
+        <span className="group-hover:underline group-hover:text-white transition-colors">
+          +92324-6288217
+        </span>
+      </a>
+    </div>
 </div>
       </div>
 
