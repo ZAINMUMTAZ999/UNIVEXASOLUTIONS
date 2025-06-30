@@ -1,12 +1,13 @@
 
 import { motion } from 'framer-motion';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import {  useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useMutation } from 'react-query';
-import { Check, Mail, MapPin, Phone, X, Send } from 'lucide-react';
+import {  Mail, MapPin, Phone,  Send } from 'lucide-react';
 import { AppContext } from '@/context/AppNotify';
 import { contactUsApi, contactUsTypes } from '@/Api';
 import { useEffect } from 'react';
+// import { features } from 'process';
 
 
 
@@ -47,36 +48,42 @@ const PricingAndContactPage = () => {
     const pricingPlans = [
         {
             name: "Basic",
-            price: "PKR 50k - 70k",
+            price: "Starting from  25,000 PKR",
             description: "Ideal for personal projects or small businesses needing a professional online presence.",
             features: [
-                { text: "4 to 5 Pages", included: true },
-                { text: "Responsive on all devices", included: true },
+                { text: "4 to 5 Pages Website (Home, Contact , About , Products/Rooms) ", included: true },
+                { text: "Responsive on all devices & Fast Loading", included: true },
                 { text: "Free Maintenance 24/7", included: true },
                 { text: "User Authentication", included: true },
-                { text: "Revisions", included: false },
-                { text: "Source Code", included: false },
-                { text: "Custom Domain", included: false },
-                { text: "Admin Panel", included: false },
-                { text: "Role-Based Access", included: false },
-                { text: "Charts & Dashboards", included: false },
+                { text: "WhatsApp Chat Integration", included: true },
+                { text: "Google Maps", included: true },
+                { text: "07 Days Free Support", included: true },
+                // { text: "Revisions", included: false },
+                // { text: "Source Code", included: false },
+                // { text: "Custom Domain", included: false },
+                // { text: "Admin Panel", included: false },
+                // { text: "Role-Based Access", included: false },
+                // { text: "Charts & Dashboards", included: false },
             ],
             isPopular: false,
         },
         {
             name: "Standard",
-            price: "PKR 80k - 250k",
+            price: "Starting from 50,000 PKR",
             description: "Perfect for growing businesses that require more functionality and control.",
             features: [
-                { text: "6 to 8 Pages", included: true },
-                { text: "Responsive on all devices", included: true },
-                { text: "Free Maintenance 24/7", included: true },
-                { text: "User Authentication", included: true },
+                // { text: "6 to 8 Pages", included: true },
+                // { text: "Responsive on all devices", included: true },
+                // { text: "Free Maintenance 24/7", included: true },
+                // { text: "User Authentication", included: true },
+ { text: "Everything in Basic plus : ", included: true },
                 { text: "Role-Based Access", included: true },
-                { text: "Admin Panel", included: true },
-                { text: "2+ Custom Dashboards", included: true },
+                { text: "Admin Panel ", included: true },
+                { text: "Custom Dashboard", included: true },
                 { text: "Interactive Charts", included: true },
+                { text: "On-Page SEO", included: true },
                 { text: "Custom Domain Setup", included: true },
+                { text: "6 months Free Maintenance", included: true },
                 { text: "Full Source Code", included: true },
                 { text: "Revisions", included: true },
             ],
@@ -84,11 +91,20 @@ const PricingAndContactPage = () => {
         },
         {
             name: "Premium",
-            price: "Coming Soon",
-            description: "Advanced, enterprise-level solutions. Get in touch for a custom consultation.",
-            features: [],
+            price: "Custom Quote",
+            description: "For Startups & growing companies needing full-scale apps",
+
+            
+            features: [
+                {text: "Everything in Basic & Standard plus :", included: true},
+                {text: "Custom Web Apps", included: true},
+                {text: "Payment Gateway Integration", included: true},
+                {text: "Multi-user Dashboards", included: true},
+                {text: "Reports & Analytics", included: true},
+                {text: "Dedicated Support Plan", included: true},
+            ],
             isPopular: false,
-            isComingSoon: true,
+            // isComingSoon: true,
         }
     ];
 
@@ -116,7 +132,7 @@ const PricingAndContactPage = () => {
                         {pricingPlans.map((plan, index) => (
                             <motion.div
                                 key={index}
-                                className={`relative border rounded-2xl p-8 flex flex-col h-full ${ plan.isPopular ? 'border-blue-500 shadow-xl' : 'border-gray-200 shadow-md' } ${ plan.isComingSoon ? 'bg-gray-100' : 'bg-white'}`}
+                                className={`relative border rounded-2xl p-8 flex flex-col h-full `}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, amount: 0.3 }}
@@ -131,10 +147,10 @@ const PricingAndContactPage = () => {
                                     )}
                                     <h3 className="text-lg text-blue-600 underline tracking-wide md:text-2xl lg:text-2xl font-extrabold">{plan.name}</h3>
                                     <p className="mt-1 text-sm md:text-lg lg:text-lg text-gray-500 min-h-[40px]">{plan.description}</p>
-                                    <div className="mt-0 md:mt-3">
+                                    {/* <div className="mt-0 md:mt-3">
                                         <span className={`text-lg md:text-4xl font-bold ${plan.isComingSoon ? 'text-gray-400' : 'text-black'}`}>{plan.price}</span>
-                                    </div>
-                                    <div className="flex-grow">
+                                    </div> */}
+                                    {/* <div className="flex-grow">
                                         {plan.isComingSoon ? (
                                             <div className="flex flex-col items-center justify-center h-full my-8">
                                                  <p className="text-2xl font-bold text-gray-800">Coming Soon!</p>
@@ -165,7 +181,7 @@ const PricingAndContactPage = () => {
                                                 Get Started
                                             </Link>
                                         )}
-                                    </div>
+                                    </div> */}
                                 </div>
                             </motion.div>
                         ))}
