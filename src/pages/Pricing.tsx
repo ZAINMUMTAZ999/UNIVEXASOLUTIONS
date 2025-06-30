@@ -191,7 +191,7 @@ const PricingAndContactPage = () => {
                         >
                           Get Started
                         </Link>
-                        <div className="">
+                        <div className="mt-2">
                           <WhatsAppLinkButtonPricing
                             phoneNumber="923246288217"
                             message="Hi, I'm interested in your services!"
