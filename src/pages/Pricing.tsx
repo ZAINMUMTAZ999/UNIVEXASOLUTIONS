@@ -1,13 +1,13 @@
 
 import { motion } from 'framer-motion';
-import {  useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useMutation } from 'react-query';
-import {  Mail, MapPin, Phone,  Send } from 'lucide-react';
+import { Check, Mail, MapPin, Phone, X, Send } from 'lucide-react';
 import { AppContext } from '@/context/AppNotify';
 import { contactUsApi, contactUsTypes } from '@/Api';
 import { useEffect } from 'react';
-// import { features } from 'process';
+
 
 
 
@@ -132,7 +132,7 @@ const PricingAndContactPage = () => {
                         {pricingPlans.map((plan, index) => (
                             <motion.div
                                 key={index}
-                                className={`relative border rounded-2xl p-8 flex flex-col h-full `}
+                                className={`relative border rounded-2xl p-8 flex flex-col h-full ${ plan.isPopular ? 'border-blue-500 shadow-xl' : 'border-gray-200 shadow-md' } `}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, amount: 0.3 }}
@@ -147,16 +147,11 @@ const PricingAndContactPage = () => {
                                     )}
                                     <h3 className="text-lg text-blue-600 underline tracking-wide md:text-2xl lg:text-2xl font-extrabold">{plan.name}</h3>
                                     <p className="mt-1 text-sm md:text-lg lg:text-lg text-gray-500 min-h-[40px]">{plan.description}</p>
-                                    {/* <div className="mt-0 md:mt-3">
-                                        <span className={`text-lg md:text-4xl font-bold ${plan.isComingSoon ? 'text-gray-400' : 'text-black'}`}>{plan.price}</span>
-                                    </div> */}
-                                    {/* <div className="flex-grow">
-                                        {plan.isComingSoon ? (
-                                            <div className="flex flex-col items-center justify-center h-full my-8">
-                                                 <p className="text-2xl font-bold text-gray-800">Coming Soon!</p>
-                                                 <p className="text-gray-500 mt-2">Exciting new features are on the way.</p>
-                                            </div>
-                                        ) : (
+                                    <div className="mt-0 md:mt-3">
+                                        <span className={`text-lg md:text-4xl font-bold `}>{plan.price}</span>
+                                    </div>
+                                    <div className="flex-grow">
+                                        { (
                                             <ul className="mt-8 space-y-4">
                                                 {plan.features.map((feature, fIndex) => (
                                                     <li key={fIndex} className="flex items-center text-sm tracking-tight -mt-8 md:text-lg md:mt-3">
@@ -172,16 +167,12 @@ const PricingAndContactPage = () => {
                                         )}
                                     </div>
                                     <div className="mt-8">
-                                        {plan.isComingSoon ? (
-                                             <div className="w-full text-center font-semibold py-3 rounded-lg bg-gray-200 text-gray-500 cursor-not-allowed">
-                                                Stay Tuned
-                                             </div>
-                                        ) : (
+                                        { (
                                             <Link to="#contact-form" className={`block w-full text-center font-semibold py-3 rounded-lg transition-colors ${ plan.isPopular ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-400 text-white hover:bg-blue-500'}`}>
                                                 Get Started
                                             </Link>
                                         )}
-                                    </div> */}
+                                    </div>
                                 </div>
                             </motion.div>
                         ))}
