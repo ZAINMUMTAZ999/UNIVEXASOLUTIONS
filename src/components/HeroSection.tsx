@@ -73,7 +73,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ images, isLoading = false }) 
   };
 
   return (
-    <section className="relative -mt-32 bg-white min-h-screen flex items-center overflow-x-hidden py-16 md:py-0">
+    <section className="relative -mt-32 bg-white min-h-screen flex items-center  py-16 md:py-0">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-0 w-72 h-72 bg-purple-200/20 rounded-full blur-3xl animate-blob" />
