@@ -6,6 +6,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { contactUsApi, contactUsTypes } from "../Api";
 import { AppContext } from "@/context/AppNotify";
 import { Button } from "@/components/ui/button";
+import WhatsAppLinkButton from "@/components/WA";
 
 // Placeholder for your decorative background elements for cleaner code
 const ContactBackground = () => (
@@ -40,6 +41,13 @@ const ContactUs = () => {
   return (
     <main className="min-h-screen bg-white relative overflow-hidden">
       <ContactBackground />
+           {/* Fixed WhatsApp Button - Positioned as floating button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <WhatsAppLinkButton 
+          phoneNumber="923246288217" 
+          message="Hi, I'm interested in your services!" 
+        />
+      </div>
 
       {/* Main content container with responsive padding and centering */}
       {/* Changed to lg:flex-row for better tablet/desktop transition */}

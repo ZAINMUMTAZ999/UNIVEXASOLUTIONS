@@ -15,7 +15,7 @@ import WorkingMethodology from "@/components/WorkingMethodolgy";
 import { GetallReviews } from "@/components/GetallReviews";
 import { motion } from 'framer-motion';
 // import { Link } from "react-router-dom";
-import WhatsAppLinkButton from "@/components/WA";
+// import WhatsAppLinkButton from "@/components/WA";
 import YearsExperience from "./YearsExperience";
 import Portfolio from "@/components/Portfolio";
 
@@ -23,17 +23,10 @@ const imageList = [img1, img2, img3, img4, img5];
 
 const LandingPage = () => {
   return (
-  <section className="mt-7  bg-white">
+  <section className="mt-7 overflow-x-hidden bg-white">
 
       <HeroSection images={imageList} />
-      
-      {/* Fixed WhatsApp Button - Positioned as floating button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <WhatsAppLinkButton 
-          phoneNumber="923246288217" 
-          message="Hi, I'm interested in your services!" 
-        />
-      </div>
+
       <span className="mt-2">
 
       <TechStack/>
